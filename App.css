@@ -1,0 +1,83 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Градиентный фон */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+.app {
+    max-width: 600px;
+    margin: 50px auto; /* Центрируем контейнер */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Тень для контейнера */
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3853ad; /* Цвет заголовка */
+}
+
+/* Стиль для контейнера ввода */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень вокруг блока ввода */
+}
+
+/* Ввод текста */
+.input-container input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-container input::placeholder {
+    color: #aaa;
+}
+
+/* Активный ввод */
+.input-container input:focus {
+    border-bottom: 2px solid #4fc3f7;
+    outline: none;
+    background-color: #ffffff; /* Белый фон при фокусе */
+}
+
+/* Кнопка добавления */
+.input-container button {
+    padding: 12px 20px;
+    background-color: #3853ad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для кнопки */
+}
+
+.input-container button:hover {
+    background-color: #00b0ff;
+    transform: translateY(-3px); /* Легкий подъем кнопки при наведении */
+}
+
+.input-container button:active {
+    transform: translateY(0); /* Возвращаем в исходное положение */
+}
